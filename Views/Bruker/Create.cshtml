@@ -1,0 +1,23 @@
+@model Bruker
+
+<h2>Opprett Bruker</h2>
+
+<form asp-action="Opprett" method="post">
+    <div>
+        <label>Navn:</label>
+        <input asp-for="Navn" />
+    </div>
+    <div>
+        <label>Kontakt:</label>
+        <input asp-for="Kontakt" />
+    </div>
+    <div>
+        <label>Info:</label>
+        <textarea asp-for="Info"></textarea>
+    </div>
+    <div>
+        <label>Antall spill:</label>
+        <input asp-for="AntallSpill" type="number" />
+    </div>
+    <button type="submit">Lagre</button>
+</form>
